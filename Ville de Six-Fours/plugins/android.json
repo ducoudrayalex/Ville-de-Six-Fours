@@ -35,6 +35,10 @@
                         {
                             "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EmailComposer\"><param name=\"android-package\" value=\"de.appplant.cordova.emailcomposer.EmailComposer\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -83,6 +87,9 @@
             "PACKAGE_NAME": "com.coolappz.Ville_de_Six_Fours"
         },
         "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.coolappz.Ville_de_Six_Fours"
+        },
+        "de.appplant.cordova.plugin.email-composer": {
             "PACKAGE_NAME": "com.coolappz.Ville_de_Six_Fours"
         }
     },

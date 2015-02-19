@@ -293,9 +293,10 @@
             </div>
         </div>
         <!-- - - - - - - - - -FIN PAGE INFOSTRAVAUX- - - - - - - - - - -->
+        
         <div data-role="dialog" id="signaler" data-close-btn="right" data-theme="a">
             <div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
-                <h1 class="ui-title" role="heading" aria-level="1">Signaler un problème</h1>
+                <h1 class="ui-title">Signaler un problème</h1>
             </div>
             <form>
                 <label for="nom">Nom :</label>
@@ -306,11 +307,11 @@
                 <input type="email" name="email" id="email" placeholder="Votre email..">
                 <label for="info">Message :</label>
                 <textarea name="message" id="info"></textarea>
-                <a class="btn" id="capture" onclick="capturePhoto()">Capture Photo</a> <br>
-                <img id="image" src="" alt="image">
-                <button id="importGalerie" onclick="getPhoto(pictureSource.PHOTOLIBRARY)">Importer depuis la librairie</button> <br>
-<!--                <img style="display:none;width:60px;height:60px;" id="smallImage" src="" alt="petiteimage" />
-                <img style="display:none;" id="largeImage" src="" alt="grande image"/>-->
+                <button data-theme="a" id="btnCapture">Prendre une Photo</button> 
+                <button data-theme="a" id="btnImportGalerie">Importer depuis la galerie</button> 
+                <button id="btnEnvoyer">Envoyer</button>
+                <img style="display:none;width:60px;height:60px;" id="smallImage" src="" alt="image" /> <br>
+
             </form>
 
             <div data-role="footer">

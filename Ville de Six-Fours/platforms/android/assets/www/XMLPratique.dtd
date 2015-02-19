@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/XMLPratique.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE root SYSTEM "XMLPratique.dtd">
+
+    <root>
+    ...
+    </root>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT root (item)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT item (service)*>
+<!ATTLIST item
+    category CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT service (nom|tel|lat|long|adresse|contenu|site)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nom (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT tel (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT lat (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT long (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT adresse (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT contenu (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT site (#PCDATA)>

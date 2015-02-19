@@ -213,3 +213,12 @@ ul.form {
  height: 350px;
  width: 100%;
 }
+
+#smallImage{
+    display:none;
+    width:60px;
+    height:60px;
+}
+#largeImage{
+    display:none;
+}
