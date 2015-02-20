@@ -92,7 +92,7 @@
     </item>
     <item category="Parking">
         <service>
-            <nom>Parking de l'église</nom>
+            <nom>Parking de l'église (Centre-Ville)</nom>
             <lat>43.091405</lat>
             <long>5.837087</long>
             <contenu>
@@ -100,7 +100,7 @@
             </contenu>         
         </service>
         <service>
-            <nom>Parking de l'hotel de ville</nom>
+            <nom>Parking de l'hotel de ville (Centre-Ville)</nom>
             <lat>43.09196566</lat>
             <long>5.8389169</long>  
             <contenu>
@@ -110,7 +110,7 @@
             </contenu>         
         </service>
         <service>
-            <nom>Parking du cinéma Six N’étoiles avenue Vincent Picareau</nom>
+            <nom>Parking du cinéma Six N’étoiles avenue Vincent Picareau (Centre-Ville)</nom>
             <lat>43.09274914</lat>
             <long>5.84144622</long>
             <contenu>34 places
@@ -119,7 +119,7 @@
                 Tarifs : somme minimale : 0,50 € – somme maximale : 10,50 €</contenu>
         </service>
         <service>
-            <nom>Parking Tassigny</nom>
+            <nom>Parking Tassigny (Centre-Ville)</nom>
             <lat>43.09379898</lat>
             <long>5.84096611</long>
             <contenu>
@@ -127,11 +127,31 @@
             </contenu>
         </service>
         <service>
-            <nom>Parking Espace culturel André Malraux</nom>
+            <nom>Parking Espace culturel André Malraux (Centre-Ville)</nom>
             <lat>43.09351694</lat>
             <long>5.84300458</long>
+            <contenu>               
+            </contenu>
+        </service>
+        <service>
+            <nom>Parking des Charmettes (Brusc)</nom>
+            <lat>43.07935814</lat>
+            <long>5.80975592</long>
             <contenu>
-                
+                38 places
+                Zone gratuite limitée à 3h du 1er mai au 31 octobre de chaque année. Stationnement réglementé par horodateur avec saisie du numéro d’immatriculation du véhicule avec apposition du ticket obligatoire sur le pare-brise, visible de l’extérieur.
+                Jours et horaires : du lundi au dimanche inclus y compris les jours fériés de 9h à 22h
+            </contenu>
+        </service>
+        <service>
+            <nom>Parking de la citadelle</nom>
+            <lat>43.07735198</lat>
+            <long>5.8063978</long>
+            <contenu>
+                Zone de longue durée limitée à 9h consécutives avec 2 premières heures gratuite du 1er mai au 30 septembre de chaque année.
+                Jours et horaires : du lundi au dimanche inclus y compris les jours fériés de 9h à 18h
+                Tarifs : 2h gratuites avec ticket obligatoire - 2h30 : 1€ (minimum de perception) – somme maximale : 4,50€ pour 9h
+                Possibilité de carte d’abonnement uniquement pour le parking : 15 jours (20€) ou 1 mois (30€). La carte est attribuée à un véhicule (immatriculation) et devra être apposée derrière le pare-brise. Sa validité est également mentionnée.
             </contenu>
         </service>
     </item>
