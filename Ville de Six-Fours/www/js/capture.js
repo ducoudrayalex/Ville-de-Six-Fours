@@ -1,117 +1,67 @@
 $('#signaler').on('pageshow', function () {
-//var pictureSource; // picture source
-//var destinationType; // sets the format of returned value 
-//$(document).ready(function () {
-//    pictureSource = navigator.camera.PictureSourceType;
-//    destinationType = navigator.camera.DestinationType;
-//});
-
-    function onPhotoDataSuccess(imageData) {
-//var urlImage = imageData.replace('content://', "");
-//    var smallImage = document.getElementById('smallImage');
-        console.log('imageData=' + imageData);
-//    // faire apparaitre l'image
-//    smallImage.style.display = 'block';
-        var path = "data:image/jpeg;base64," + imageData;
-//    // montre la photo prise en insérant sa source dans l'attribut src de la balise img
-//    smallImage.src = "data:image/jpeg;base64," + imageData;
-//        cordova.plugins.email.open({
-//            to: ['alex.ducoudray@gmail.com'],
-//            subject: 'signalement',
-//            //attachment: ["base64:image.png/" + imageData]
-//            body: '<img  height="200" width="200" src="' + path + '" alt="imageSignalement"/>',
-//            isHtml: true
-//        });
-        $.ajax({
-            'type': 'POST',
-            'url': 'https://mandrillapp.com/api/1.0/messages/send.json',
-            data: {
-                'key': 'BpR17CiZtHObUg0R3UdX5g',
-                message: {
-                    'from_email': 'alex.ducoudray@gmail.com',
-                    'to': [
-                        {
-                            'email': 'ducoudray.alex@gmail.com',
-                            'type': 'to'
+    document.getElementById('Image').src = "";
+    document.getElementById('email').value = "";
+    document.getElementById('info').value = "";
+    document.addEventListener("deviceready", function () {
+        $("#btnCapture").click(function () {
+            //options de capture photo
+            var options = {
+                quality: 50, //qualité de la photo
+                destinationType: navigator.camera.DestinationType.DATA_URL, //url de destination de la photo
+                sourceType: navigator.camera.PictureSourceType.CAMERA, //où la photo va être sauvegardé
+                allowEdit: true, //autorise l'edition de la photo
+                encodingType: navigator.camera.EncodingType.JPEG, //encodage du type de la photo(jpeg)
+                saveToPhotoAlbum: true//sauvegarde de la photo dans l'album du téléphone
+            };
+            /**
+             * Fonction qui lance l'app de camera du téléphone et envoie un email avec la photo en piece jointe
+             */
+            navigator.camera.getPicture(function (imageData) {
+                var image = document.getElementById('Image');
+                image.src = "data:image/jpeg;base64," + imageData;
+                console.log(imageData);
+                console.log('email:' + document.getElementById('email').value);
+                console.log('info:' + document.getElementById('info').value);
+                //appel ajax vers l'api mandrill : https://mandrillapp.com/
+                var laDate = new Date();
+                var annee = laDate.getFullYear();
+                var mois = laDate.getMonth() + 1;
+                var jour = laDate.getDate();
+                var heure = laDate.getHours();
+                var minute = laDate.getMinutes();
+                var seconde = laDate.getSeconds();
+                $.ajax({
+                    'type': 'POST',
+                    'url': 'https://mandrillapp.com/api/1.0/messages/send.json',
+                    data: {
+                        'key': 'BpR17CiZtHObUg0R3UdX5g', //clé d'API a changer car sur mon compte mandrill
+                        message: {
+                            'from_email': document.getElementById('email').value, //email a renseigner
+                            'to': [
+                                {
+                                    'email': 'ducoudray.alex@gmail.com', //email de destination soit au service qui prend en charge les demandes
+                                    'type': 'to'
+                                }
+                            ],
+                            "attachments": [//piece jointe
+                                {
+                                    "type": "image/jpg",
+                                    "name": 'signalement-' + jour + '/' + mois + '/' + annee + '/' + heure +'/'+minute+'/'+seconde+ '.jpg', //nom du fichier
+                                    "content": imageData//contenu de l'image trés important !(en base64)
+                                }
+                            ],
+                            'subject': 'signalement', //sujet du mail
+                            'text': document.getElementById('info').value//contenu du mail
                         }
-                    ],
-//                    "attachments": [
-//                        {
-//                            "type": "image/png",
-//                            "name": "image.png",
-//                            "content": path
-//                        }
-//                    ],
-                    "images": [
-                        {
-                            "type": "image/png",
-                            "name": '<img src="' + path + '" alt="imageSignalement"/>',
-                            "content": path
-                        }
-                    ],
-                    'autotext': true,
-                    'subject': 'signalement',
-                    'html': '<img src="' + path + '" alt="imageSignalement"/>'
-                }
-            }
-        }).done(function (response) {
-            console.log(response); // if you're into that sorta thing
+                    }
+                }).done(function (response) {
+                    console.log(response); // if you're into that sorta thing
+                });
+            }, onFail, options);
         });
-    }
-    $('#btnCapture').click(function () {
-        navigator.camera.getPicture(onPhotoDataSuccess, onFail, {quality: 70, allowEdit: true,
-            destinationType: navigator.camera.DestinationType.DATA_URL});
-    });
+    }, false);
+
     function onFail(message) {
         alert('La jointure d\'une photo a échoué car : ' + message);
     }
-
-
-// Called when a photo is successfully retrieved
-//function onPhotoURISuccess(imageURI) {
-//    // Uncomment to view the image file URI 
-//    console.log(imageURI);
-//
-//    // Get image handle
-//    var smallImage = document.getElementById('smallImage');
-//
-//    // Unhide image elements
-//    smallImage.style.display = 'block';
-//
-//    // Show the captured photo
-//    // The inline CSS rules are used to resize the image
-//    smallImage.src = imageURI;
-//
-//}
-// Called if something bad happens. 
-
-    /**
-     * 
-     * @param {type} source
-     * @returns {undefined}
-     */
-//function getPhoto(source) {
-//    navigator.camera.getPicture(onPhotoURISuccess, onFail, {quality: 70,
-//        destinationType: destinationType.FILE_URI,
-//        sourceType: source});
-//}
-
-    /**
-     * récupère une image de la galerie photo du telephone
-     */
-//$('#btnImportGalerie').click(getPhoto(pictureSource.PHOTOLIBRARY));
-    /**
-     *Capture une photo en lançant l'appareil photo du telephone 
-     */
-
-
-//$('#btnEnvoyer').click(function () {
-//    cordova.plugins.email.open({
-//        to: ['alex.ducoudray@gmail.com'],
-//        subject: 'signalement',
-//        attachment: [document.getElementById('smallImage').src],
-//        body: $('#info').value
-//    });
-//});
-
 });

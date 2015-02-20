@@ -1,12 +1,13 @@
-//var fluxRSS = "news_FR_flux.xml"; //URL du flux
-//var fluxRSSActus = "http://www.ville-six-fours.fr/feed/feedname";
-//var fluxRSSAgenda = "http://www.ville-six-fours.fr/feed/feedevents";
+/**
+ * fonction qui génére le flux d'actualité
+ * @returns {undefined}
+ */
 function AjaxArticle() {
     var stockFluxRSS = [];//tableau pour mettre les elements du flux rss
     var retourHtml = "";//chaine de caractere pour inserer du html dans la page
     $.ajax({//appel ajax en jquery
         type: "post",
-        url: "http://www.ville-six-fours.fr/feed/feedname",
+        url: "http://www.ville-six-fours.fr/feed/feedname",//url du flux rss
         dataType: "xml",
         success: function (xml) {
             $(xml).find('item').each(function (id, valeur) {//navigation dans le fichier xml pour chaque item
@@ -70,8 +71,14 @@ function AjaxArticle() {
     });
 
 }
-/*
- * fonction identique a celle des actus mais adapté a l'agenda
+/**
+ * fonction qui remplit une listview ici pour l'agenda avec des evennements par date
+ * @param {type} fluxRSS
+ * @param {type} idlistview
+ * @param {type} idcontenuflux
+ * @param {type} idcontenuRSS
+ * @param {type} liencontenu
+ * @returns {undefined}
  */
 function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencontenu) {
     console.log(fluxRSS);
@@ -137,7 +144,15 @@ function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencont
     });
 }
 
-
+/**
+ * fonction d e génération de la liste des patrimoines
+ * @param {type} fluxRSS
+ * @param {type} idlistview
+ * @param {type} idcontenuflux
+ * @param {type} idcontenuRSS
+ * @param {type} liencontenu
+ * @returns {undefined}
+ */
 function AjaxListviewAvoir(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencontenu) {
     console.log(fluxRSS);
     var stockFluxRSS = [];

@@ -1,3 +1,7 @@
+/**
+ * 
+ * @returns {undefined}
+ */
 function listePratique() {
     $.ajax({
         type: 'get',
@@ -35,7 +39,7 @@ function listePratique() {
                 </a></li>';
                 }
             });
-            //on rempli les deux listes par deux chaines differentes(une par onglet
+            //on rempli les deux listes par deux chaines differentes(une par onglet)
             $('#listServices').html(retourHtmlService);
             $('#listUrgences').html(retourHtmlUrgence);
             $('#listServices').listview({
@@ -58,11 +62,13 @@ function listePratique() {
                 $.mobile.changePage("#PageContenuPratique", {
                     transition: "slide"
                 });
-
+                //test : si l'adresse n'est pas renseigné ou si la position en latitude et longitude nn'est pas renseigné alors ou cache la map
+                //sinon on l'affiche 
                 if (!stockElementXML[id].adresse | !stockElementXML[id].lat && !stockElementXML[id].long) {
                     $('#mapCanvas').hide();
                 } else {
                     $('#mapCanvas').show();
+                    //la carte est une carte embarqué(iframe), on fait appel a la google embed API qui va faire appel au latitude et longitude des lieux pour y mettre un marker
                     $('#mapCanvas').html('<iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?&key=AIzaSyDSlL_s0uDPis7IK5HgUsJDSZvGlF-w6ZU&q='+stockElementXML[id].lat+','+stockElementXML[id].long+'"></iframe>');
                 }
                

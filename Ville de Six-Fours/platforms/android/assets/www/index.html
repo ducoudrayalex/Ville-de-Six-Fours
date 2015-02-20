@@ -292,22 +292,20 @@
             </div>
         </div>
         <!-- - - - - - - - - -FIN PAGE INFOSTRAVAUX- - - - - - - - - - -->
-        
+
         <div data-role="page" id="signaler" data-theme="a">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Signaler un problème</h1>
-                    <a href="#accueil" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">home</a>             
+                <a href="#accueil" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">home</a>             
             </div>
             <form>
-                <label for="email">E-mail :</label>
-                <input type="email" name="email" id="email" placeholder="Votre email..">
+                <label for="email">Email :</label>
+                <input type="email" data-clear-btn="true" name="email" id="email" value="">
                 <label for="info">Message :</label>
-                <textarea name="message" id="info"></textarea>
+                <textarea name="message" id="info" placeholder="Explication du problème, date ... "></textarea>
                 <button data-theme="a" id="btnCapture">Prendre une Photo</button> 
-                <button data-theme="a" id="btnImportGalerie">Importer depuis la galerie</button> 
-                <button id="btnEnvoyer">Envoyer</button>
-                <img style="display:none;width:60px;height:60px;" id="smallImage" src="" alt="image" /> <br>
+                <img id="Image" src="" alt="image" class="img-responsive" /> 
             </form>
             <div data-role="footer">
             </div>
