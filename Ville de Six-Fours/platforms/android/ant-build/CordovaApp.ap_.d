@@ -180,6 +180,7 @@ C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\js\jquery.ui.map.full.min.js \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\js\lecteurRSS.js \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\js\Pratique.js \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\js\Swipe.js \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\de.appplant.cordova.plugin.email-composer \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.camera \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.device \

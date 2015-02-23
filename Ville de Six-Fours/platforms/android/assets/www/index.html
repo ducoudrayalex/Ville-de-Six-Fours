@@ -50,7 +50,7 @@
                     </div>
                 </div>-->
         <!-- - - - - - - - -PAGE D'ACCUEIL- - - - - - - - -->
-        <div data-role="page" id="accueil" data-theme="c" data-title="Accueil">           
+        <div data-role="page" id="accueil" class="page" data-dom-cache="true" data-prev="infotravaux" data-next="Agenda" data-theme="c" data-title="Accueil">           
             <!--bouton réseaux sociaux-->
             <ul class="form">
                 <li><a class="facebook" href="https://fr-fr.facebook.com/VilleDeSixFoursLesPlages"><i class="fa fa-facebook-square"></i></a></li>         
@@ -85,7 +85,7 @@
         </div>
         <!-- - - - - - - - -FIN PAGE D'ACCUEIL- - - - - - - - - -->
         <!-- - - - - - - - - -PAGE AGENDA- - - - - - - - -->
-        <div data-role="page" id="Agenda" data-title="Agenda" data-theme="d">
+        <div data-role="page" id="Agenda" class="page" data-dom-cache="true" data-prev="accueil" data-next="Avoir" data-title="Agenda" data-theme="d">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Agenda</h1>
@@ -105,8 +105,8 @@
                 <div data-role="navbar">
                     <ul>
                         <li><a href="#Agenda" data-icon="calendrier" class="ui-btn-active ui-state-persist">Agenda</a></li>
-                        <li><a href="#Avoir" data-icon="avoir" data-transition="turn">A voir</a></li>
-                        <li><a href="#Actus" data-icon="actus" data-transition="none">Actus</a></li>
+                        <li><a href="#Avoir" data-icon="avoir" data-transition="slide">A voir</a></li>
+                        <li><a href="#Actus" data-icon="actus" data-transition="slide">Actus</a></li>
                         <li><a href="#Pratique" data-icon="pratique" data-transition="slide">Pratique</a></li>
                         <li><a href="#infostravaux" data-icon="info" data-transition="slide">Infotravo</a></li>
                     </ul>
@@ -114,7 +114,7 @@
             </div>
         </div>
 
-        <div data-role="page" id="PageContenuFluxAgenda" data-theme="d" data-title="Agenda">
+        <div data-role="page" id="PageContenuFluxAgenda" data-dom-cache="true" class="page" data-prev="Agenda" data-theme="d" data-title="Agenda">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Agenda</h1>
@@ -128,7 +128,7 @@
         </div>
         <!-- - - - - - - - -FIN PAGE AGENDA- - - - - - - - - - -->
         <!-- - - - - - - - - PAGE A VOIR - - - - - - - - -->
-        <div data-role="page" id="Avoir" data-title="A voir" data-theme="d">
+        <div data-role="page" id="Avoir" data-dom-cache="true" data-prev="Agenda" data-next="Actus" data-title="A voir" data-theme="d">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>A voir</h1>
@@ -147,14 +147,14 @@
                     <ul>
                         <li><a href="#Agenda" data-icon="calendrier" data-transition="slide" data-direction="reverse">Agenda</a></li>
                         <li><a href="#Avoir" data-icon="avoir" class="ui-btn-active ui-state-persist">A voir</a></li>
-                        <li><a href="#Actus" data-icon="actus" data-transition="flow">Actus</a></li>
+                        <li><a href="#Actus" data-icon="actus" data-transition="slide">Actus</a></li>
                         <li><a href="#Pratique" data-icon="pratique" data-transition="slide">Pratique</a></li>
-                        <li><a href="#infostravaux" data-icon="info" data-transition="flip">Infotravo</a></li>
+                        <li><a href="#infostravaux" data-icon="info" data-transition="slide">Infotravo</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div data-role="page" id="PageContenuFluxAvoir" data-theme="d" data-title="A voir">
+        <div data-role="page" id="PageContenuFluxAvoir" data-dom-cache="true" data-prev="Avoir" data-theme="d" data-title="A voir">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>A voir</h1>
@@ -168,7 +168,7 @@
         </div>
         <!-- - - - - - - - - -FIN PAGE A VOIR- - - - - - - - -->
         <!-- - - - - - - - - -PAGE ACTUS - - - - - - - - -->
-        <div data-role="page" id="Actus" data-title="Actus" data-theme="d">
+        <div data-role="page" id="Actus" data-title="Actus" data-prev="Avoir" data-next="Pratique" data-dom-cache="true" data-theme="d">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Actus</h1>
@@ -185,16 +185,16 @@
             <div data-role="footer" data-position="fixed" data-theme="b">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#Agenda" data-icon="calendrier" data-transition="none" data-direction="reverse">Agenda</a></li>
+                        <li><a href="#Agenda" data-icon="calendrier" data-transition="slide" data-direction="reverse">Agenda</a></li>
                         <li><a href="#Avoir" data-icon="avoir" data-transition="slide" data-direction="reverse">A voir</a></li>
                         <li><a href="#Actus" data-icon="actus"  class="ui-btn-active ui-state-persist">Actus</a></li>
-                        <li><a href="#Pratique" data-icon="pratique" data-transition="pop">Pratique</a></li>
-                        <li><a href="#infostravaux" data-icon="info" data-transition="turn">Infotravo</a></li>
+                        <li><a href="#Pratique" data-icon="pratique" data-transition="slide">Pratique</a></li>
+                        <li><a href="#infostravaux" data-icon="info" data-transition="slide">Infotravo</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div data-role="page" id="PageContenuFluxActus" data-theme="d" data-title="Actus">
+        <div data-role="page" id="PageContenuFluxActus" data-dom-cache="true" data-prev="Actus" data-theme="d" data-title="Actus">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Actus</h1>
@@ -208,7 +208,7 @@
         </div>
         <!-- - - - - - - - -FIN PAGE ACTUS- - - - - - - - -->
         <!-- - - - -- - - -PAGE PRATIQUE- - - - - - - - -->
-        <div data-role="page" id="Pratique" data-title="Pratique" data-theme="d">
+        <div data-role="page" id="Pratique" data-title="Pratique" data-prev="Actus" data-next="infostravaux" data-dom-cache="true" data-theme="d">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Pratique</h1>
@@ -246,16 +246,16 @@
             <div data-role="footer" data-position="fixed" data-theme="b">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#Agenda" data-transition="slideup" data-direction="reverse" data-icon="calendrier">Agenda</a></li>
-                        <li><a href="#Avoir" data-transition="slidedown" data-direction="reverse" data-icon="avoir">A voir</a></li>
-                        <li><a href="#Actus" data-transition="slidefade" data-direction="reverse" data-icon="actus">Actus</a></li>
+                        <li><a href="#Agenda" data-transition="slide" data-direction="reverse" data-icon="calendrier">Agenda</a></li>
+                        <li><a href="#Avoir" data-transition="slide" data-direction="reverse" data-icon="avoir">A voir</a></li>
+                        <li><a href="#Actus" data-transition="slide" data-direction="reverse" data-icon="actus">Actus</a></li>
                         <li><a href="#Pratique" data-icon="pratique"  data-transition="slide" class="ui-btn-active ui-state-persist">Pratique</a></li>
                         <li><a href="#infostravaux" data-icon="info" data-transition="slide">Infotravo</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div data-role="page" id="PageContenuPratique" data-theme="d">
+        <div data-role="page" id="PageContenuPratique" data-prev="Pratique" data-dom-cache="true" data-theme="d">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Pratique</h1>
@@ -274,7 +274,7 @@
         </div>
         <!-- - - - - - - - - - -FIN PAGE PRATIQUE- - - - - - - - -->
         <!-- - - - - - - - - - -PAGE INFOSTRAVAUX- - - - - - - - - -->
-        <div data-role="page" id="infostravaux" data-title="Travaux" data-theme="d">
+        <div data-role="page" id="infostravaux" data-dom-cache="true" data-prev="Pratique" data-next="accueil" data-title="Travaux" data-theme="d">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Infos Travaux</h1>
@@ -299,7 +299,7 @@
         </div>
         <!-- - - - - - - - - -FIN PAGE INFOSTRAVAUX- - - - - - - - - - -->
         <!-- - - - - - - - -PAGE SIGNALEMENT- - - - - - - - -->
-        <div data-role="page" id="signaler" data-title="Signaler" data-theme="d">
+        <div data-role="page" id="signaler"  data-title="Signaler" data-theme="d">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Signaler un problème</h1>
@@ -315,7 +315,7 @@
                         <div class="control-group">
                             <label class="control-label" for="email">email :</label>
                             <div class="controls">
-                                <input id="email" name="email" type="text" placeholder="Votre email" class="input-xlarge" required="">
+                                <input id="email" name="email" type="email" placeholder="Votre email" class="input-xlarge" required="">
                                 <p class="help-block">Entrez votre adresse mail</p>
                             </div>
                         </div>
@@ -352,6 +352,7 @@
         <script type="text/javascript" src="js/Pratique.js"></script>
         <script type="text/javascript" src="js/capture.js"></script>
         <script type="text/javascript" src="js/lecteurRSS.js"></script>
+        <script type="text/javascript" src="js/Swipe.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyDSlL_s0uDPis7IK5HgUsJDSZvGlF-w6ZU"></script>
         <!--        <script type="text/javascript" src="js/index.js"></script>-->
