@@ -17,7 +17,11 @@
                 Mercredi 08:00-12:00/13:30-16:00
                 Jeudi 08:00-12:00/13:30-16:00
                 Vendredi 08:00-12:00/13:30-16:00</contenu>
-        </service>      
+        </service> 
+        <service>
+            <nom>SIDA Info Service</nom>
+            <tel>0 800 840 800</tel>
+        </service>     
     </item>
     <item category="Urgence">
         <service>
@@ -34,12 +38,15 @@
             <tel>18</tel>  
             <lat>43.099818</lat>
             <long>5.817243</long>
-            <adresse>av Cap Nègre, 83140 SIX FOURS LES PLAGES</adresse>
-                
+            <adresse>av Cap Nègre, 83140 SIX FOURS LES PLAGES</adresse>               
         </service>
         <service>
             <nom>Samu</nom>
             <tel>15</tel>  
+        </service>
+        <service>
+            <nom>SOS Médecins</nom>
+            <tel>3624</tel>
         </service>
     </item>
     <item category="Assistance">
@@ -51,12 +58,19 @@
     <item category="Emploi">
         <service>
             <nom>Pôle emploi</nom>
-            <tel>3949</tel>  
-            <adresse>165 chemin des Négadoux, 83140 Six-Fours-les-Plages</adresse>
+            <tel>3949</tel> 
+            <lat>43.0971164</lat> 
+            <long>5.8495311</long>
+            <adresse>543 Avenue Maréchal Juin, 83140 Six-Fours-les-Plages</adresse>
             <contenu>Horaires d'ouverture
                 Du Lundi au Jeudi : de 08h30 à 16h15
                 Le Vendredi : de 08h30 à 12h30</contenu>
             <site>http://www.pole-emploi.fr</site>
+            <mail>ape.83000@pole-emploi.fr</mail>
+        </service>
+        <service>
+            <nom>Caisse d’Allocations Familiales (CAF)</nom>
+            <tel>0 820 259 510</tel>
         </service>       
     </item>
     <item category="Administration">
@@ -75,6 +89,22 @@
             <tel>3939</tel>  
         </service>
         <service>
+            <nom>Prefecture Du Var</nom>
+            <tel>04 94 18 83 83</tel>
+            <adresse>Prefecture Du Var, Boulevard du 112ÈME Régiment d'Infanterie, Toulon</adresse>
+            <contenu>Du lundi au jeudi de 08h30 à 16h30
+                Le vendredi de 08h30 à 16h00</contenu>
+            <site>http://www.var.gouv.fr</site>
+        </service>
+        <service>
+            <nom>Point d'Information Jeunesse(PIJ)</nom>
+            <lat>43.0944239</lat>
+            <long>5.8392088</long>
+            <adresse>Maison des Familles 135 Avenue de la Cauquière 83140 Six-Fours</adresse>
+            <tel>04 94 34 93 70</tel>
+            <contenu>Horaires d’ouverture : lundi, mardi, jeudi et vendredi de 8h30 à 12h et de 13h30 à 17h30, et mercredi de 10h à 12h et de 13h30 à 17h30.</contenu>
+        </service>
+        <service>
             <nom>régie de l'eau</nom>
             <tel>04.94.34.93.01</tel>
             <adresse>81 avenue de la Mer, 83140 Six-Fours</adresse>
@@ -89,6 +119,22 @@
             <adresse>107 Boulevard Henri Fabre - CS 30536 83041 TOULON Cedex 09</adresse>
             <site>http://www.tpm-agglo.fr</site>
         </service>  
+        <service>
+            <nom>Trésorerie</nom>
+            <tel>04 94 07 21 07</tel>
+            <lat>43.0950571</lat>
+            <long>5.8324254</long>
+            <adresse>Trésorerie de Six-Fours-les-Plages	33, avenue de la Mer BP 110 83183 Six-Fours-les-Plages</adresse>
+            <mail>t083024@dgfip.finances.gouv.fr</mail>
+            <site>http://www.impots.gouv.fr</site>
+        </service>
+        <service>
+            <nom>Tribunal de grande instance de Toulon</nom>
+            <tel>04 94 09 60 00 </tel>
+            <adresse>place Gabriel Péri BP 506 83041 TOULON CEDEX 9</adresse>
+            <site>http://www.justice.gouv.fr/</site>
+            <contenu>Ouverture du lundi au vendredi de 08h15 à 17h15</contenu>
+        </service>
     </item>
     <item category="Parking">
         <service>

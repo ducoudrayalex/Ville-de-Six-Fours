@@ -89,7 +89,8 @@ function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencont
         url: fluxRSS,
         dataType: "xml",
         success: function (xml) {
-            $(xml).find('item').each(function (id, valeur) {
+            if($(xml).find('item')){
+                $(xml).find('item').each(function (id, valeur) {
                 var elementRSS = {
                     image: $(valeur).find('url').text(),
                     titre: $(valeur).find('title').text(),
@@ -99,7 +100,9 @@ function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencont
                 };
                 stockFluxRSS.push(elementRSS);
             });
-
+            }else{
+                $(idlistview).html('<li><h1>Il n\'y a pas d\'évenement prévus à ce jour</h1></li>');
+            }
             $.each(stockFluxRSS, function (id, valeur) {
                 retourHtml += '<li date="' + valeur.dtevent + '" >\
                 <a id ="' + id + '"  class="' + liencontenu + '">\

@@ -55,7 +55,8 @@ $('#signaler').on('pageshow', function () {
                         }
                     }
                 }).done(function (response) {
-                    console.log(response); // if you're into that sorta thing
+                    //console.log(response); // if you're into that sorta thing
+                    alert('Votre signalement a été envoyé avec succés');
                 });
             }, onFail, options);
         });

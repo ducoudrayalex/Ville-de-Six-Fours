@@ -21,7 +21,9 @@ function listePratique() {
                         lat: $(this).find('lat').text(),
                         long: $(this).find('long').text(),
                         adresse: $(this).find('adresse').text(),
-                        contenu: $(this).find('contenu').text()
+                        contenu: $(this).find('contenu').text(),
+                        mail:$(this).find('mail').text(),
+                        site:$(this).find('site').text()
                     };
                     stockElementXML.push(elementXML);
                 });
@@ -32,6 +34,7 @@ function listePratique() {
                 <a id ="' + id + '"  class="liencontenuPratique">\
                 <p class="nom">' + valeur.nom + '</p>\
                 </a></li>';
+                }else if(valeur.category==='Ecole'){
                 } else {
                     retourHtmlService += '<li category="' + valeur.category + '" >\
                 <a id ="' + id + '"  class="liencontenuPratique">\
@@ -64,19 +67,21 @@ function listePratique() {
                 });
                 //test : si l'adresse n'est pas renseigné ou si la position en latitude et longitude nn'est pas renseigné alors ou cache la map
                 //sinon on l'affiche 
-                if (!stockElementXML[id].adresse | !stockElementXML[id].lat && !stockElementXML[id].long) {
+                if (!stockElementXML[id].lat && !stockElementXML[id].long) {
                     $('#mapCanvas').hide();
                 } else {
                     $('#mapCanvas').show();
                     //la carte est une carte embarqué(iframe), on fait appel a la google embed API qui va faire appel au latitude et longitude des lieux pour y mettre un marker
-                    $('#mapCanvas').html('<iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?&key=AIzaSyDSlL_s0uDPis7IK5HgUsJDSZvGlF-w6ZU&q='+stockElementXML[id].lat+','+stockElementXML[id].long+'"></iframe>');
+                    $('#mapCanvas').html('<iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?&key=AIzaSyDSlL_s0uDPis7IK5HgUsJDSZvGlF-w6ZU&q=' + stockElementXML[id].lat + ',' + stockElementXML[id].long + '"></iframe>');
                 }
-               
+
 //infopratique du service a completer
-                if (stockElementXML[id].tel) {
+                if (stockElementXML[id].category!=='Parking') {
                     $("#infoPratique").html('<h3 style="text-align:center;font-weight:bold;">' + stockElementXML[id].nom + '</h3><br>\
-                <p>Téléphone : <a href="tel:stockElementXML[id].tel">' + stockElementXML[id].tel + '</a></p>\n\
-                <p>' + stockElementXML[id].contenu + '</p>');
+                <p>Téléphone : <a href="tel:stockElementXML[id].tel">' + stockElementXML[id].tel + '</a>\n\
+                <a href="mailto:stockElementXML[id].mail">' + stockElementXML[id].mail + '</a>\n\
+                <a href="'+stockElementXML[id].site+'">' + stockElementXML[id].site + '</a></p>\n\
+                <h5>' + stockElementXML[id].adresse + '</h5><br><p>' + stockElementXML[id].contenu + '</p>');
                 } else {
                     $("#infoPratique").html('<h3 style="text-align:center;font-weight:bold;">' + stockElementXML[id].nom + '</h3><br>\
                 <p>' + stockElementXML[id].contenu + '</p>');

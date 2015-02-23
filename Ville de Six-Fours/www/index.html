@@ -223,6 +223,7 @@
                         <ul>
                             <li><a href="#services" data-theme="b" class="ui-btn-active">Services</a></li>
                             <li><a href="#urgences" data-theme="b">Urgences</a></li>
+                            <li><a href="#ecoles" data-theme="b">Ecoles</a></li>
                         </ul>
                     </div>
                     <div id="services">
@@ -232,6 +233,11 @@
                     </div>
                     <div id="urgences">
                         <ul data-role="listview" data-filter="true" id="listUrgences" data-inset="true" data-theme="b">
+
+                        </ul>
+                    </div>
+                    <div id="ecoles">
+                        <ul data-role="listview" data-filter="true" id="listEcoles" data-inset="true" data-theme="b">
 
                         </ul>
                     </div>
@@ -292,22 +298,55 @@
             </div>
         </div>
         <!-- - - - - - - - - -FIN PAGE INFOSTRAVAUX- - - - - - - - - - -->
-
-        <div data-role="page" id="signaler" data-theme="a">
+        <!-- - - - - - - - -PAGE SIGNALEMENT- - - - - - - - -->
+        <div data-role="page" id="signaler" data-title="Signaler" data-theme="d">
             <div data-role="header" data-position="fixed" data-theme="b">
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Signaler un problème</h1>
                 <a href="#accueil" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">home</a>             
             </div>
-            <form>
-                <label for="email">Email :</label>
-                <input type="email" data-clear-btn="true" name="email" id="email" value="">
-                <label for="info">Message :</label>
-                <textarea name="message" id="info" placeholder="Explication du problème, date ... "></textarea>
-                <button data-theme="a" id="btnCapture">Prendre une Photo</button> 
-                <img id="Image" src="" alt="image" class="img-responsive" /> 
-            </form>
-            <div data-role="footer">
+            <div data-role="main" class="ui-content">
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Signaler un problème</legend>
+                        <!-- Text input-->
+                        <div class="control-group">
+                            <label class="control-label" for="email">email :</label>
+                            <div class="controls">
+                                <input id="email" name="email" type="text" placeholder="Votre email" class="input-xlarge" required="">
+                                <p class="help-block">Entrez votre adresse mail</p>
+                            </div>
+                        </div>
+                        <!-- Textarea -->
+                        <div class="control-group">
+                            <label class="control-label" for="info">Informations :</label>
+                            <div class="controls">                     
+                                <textarea id="info" name="info">Information, date, adresse</textarea>
+                            </div>
+                        </div>
+                        <!-- Button -->
+                        <div class="control-group">
+                            <label class="control-label" for="btnCapture"></label>
+                            <div class="controls">
+                                <button id="btnCapture" name="btnCapture" class="btn btn-inverse">Prendre une photo</button>
+                            </div>
+                        </div>
+                        <img src="" id="Image" alt="image">
+                    </fieldset>
+                </form>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="b">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#Agenda" data-transition="slide" data-direction="reverse" data-icon="calendrier">Agenda</a></li>
+                        <li><a href="#Avoir" data-transition="slide" data-direction="reverse" data-icon="avoir">A voir</a></li>
+                        <li><a href="#Actus" data-transition="slide" data-direction="reverse" data-icon="actus">Actus</a></li>
+                        <li><a href="#Pratique" data-transition="slide" data-direction="reverse" data-icon="pratique">Pratique</a></li>
+                        <li><a href="#infostravaux" data-transition="slide" data-direction="reverse" data-icon="info">Infotravo</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <script type="text/javascript" src="js/Pratique.js"></script>
