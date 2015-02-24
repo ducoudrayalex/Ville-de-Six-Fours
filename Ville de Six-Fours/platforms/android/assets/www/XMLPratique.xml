@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+    <item>
+        <service>
+            <nom>Déchèterie</nom>
+            <tel>04 94 74 93 92</tel>
+            <lat>43.0723563</lat>
+            <long>5.8275601</long>
+            <adresse>Chemin de Courrens 83140 Six-Fours les Plages</adresse>
+            <content>Horaires et jours d'ouverture : du lundi au vendredi de 8h à 12h et de 13h30 à 17h, le samedi de 9h à 16h30 non-stop, le dimanche de 8h à 12h.</content>
+        </service>
+    </item>
     <item category="Sante">
         <service>
             <nom>CPAM</nom>
