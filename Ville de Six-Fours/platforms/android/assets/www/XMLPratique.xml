@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <item>
+    <item category="autre">
         <service>
             <nom>Déchèterie</nom>
             <tel>04 94 74 93 92</tel>
@@ -209,6 +209,29 @@
                 Tarifs : 2h gratuites avec ticket obligatoire - 2h30 : 1€ (minimum de perception) – somme maximale : 4,50€ pour 9h
                 Possibilité de carte d’abonnement uniquement pour le parking : 15 jours (20€) ou 1 mois (30€). La carte est attribuée à un véhicule (immatriculation) et devra être apposée derrière le pare-brise. Sa validité est également mentionnée.
             </contenu>
+        </service>
+    </item>
+    <item category="Ecoles">
+        <service>
+            <nom>Ecole maternelle du Brusc</nom>
+            <adresse>231 Rue Marius Cornille 83140 Six-Fours les Plages</adresse>
+            <lat>43.0753239</lat>
+            <long>5.8102857</long>
+            <tel> 04 94 34 06 07</tel>
+        </service>
+        <service>
+            <nom>Ecole maternelle Reynier</nom>
+            <adresse>Rue du Collège 83140 Six-Fours les Plages</adresse>
+            <lat>43.0916052</lat>
+            <long>5.8409806</long>
+            <tel>04 94 34 20 26</tel>
+        </service>
+        <service>
+            <nom>Ecole maternelle Le Belvédère</nom>
+            <adresse>375 Rocade du Belvédère 83140 Six-Fours les Plages</adresse>
+            <lat>43.1114331</lat>
+            <long>5.8180461</long>
+            <tel>04 94 07 34 84</tel>
         </service>
     </item>
 </root>

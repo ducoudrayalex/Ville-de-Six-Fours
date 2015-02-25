@@ -72,7 +72,7 @@ function AjaxArticle() {
 
 }
 /**
- * fonction qui remplit une listview ici pour l'agenda avec des evennements par date
+ * fonction qui remplit une listview ici pour l'agenda avec des evenements par date
  * @param {type} fluxRSS
  * @param {type} idlistview
  * @param {type} idcontenuflux
@@ -221,4 +221,3 @@ $(document).ready(function () {//evennement d'appel des fonctions ci-dessus
     });
 });
 
-var flux = "http://centre-loisirs.ville-six-fours.fr/feed/feedeventsloisirs";

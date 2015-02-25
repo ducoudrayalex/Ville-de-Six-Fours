@@ -11,6 +11,7 @@ function listePratique() {
             var stockElementXML = [];
             var retourHtmlService = "";
             var retourHtmlUrgence = "";
+            var retourHtmlEcole="";
             $(xml).find('item').each(function () {
                 var categorie = $(this).attr('category');
                 $(this).find('service').each(function (valeur) {
@@ -34,7 +35,11 @@ function listePratique() {
                 <a id ="' + id + '"  class="liencontenuPratique">\
                 <p class="nom">' + valeur.nom + '</p>\
                 </a></li>';
-                }else if(valeur.category==='Ecole'){
+                }else if(valeur.category==='Ecoles'){
+                    retourHtmlEcole+='<li category="' + valeur.category + '" >\
+                <a id ="' + id + '"  class="liencontenuPratique">\
+                <p class="nom">' + valeur.nom + '</p>\
+                </a></li>';
                 } else {
                     retourHtmlService += '<li category="' + valeur.category + '" >\
                 <a id ="' + id + '"  class="liencontenuPratique">\
@@ -45,6 +50,7 @@ function listePratique() {
             //on rempli les deux listes par deux chaines differentes(une par onglet)
             $('#listServices').html(retourHtmlService);
             $('#listUrgences').html(retourHtmlUrgence);
+            $('#listEcoles').html(retourHtmlEcole);
             $('#listServices').listview({
                 autodividers: true,
                 filterPlaceholder: "Que cherchez-vous ? ",
@@ -57,6 +63,14 @@ function listePratique() {
                 filterPlaceholder: "Que cherchez-vous ? ",
                 autodividersSelector: function (li) {
                     var out = li.attr('class');
+                    return out;
+                }
+            }).listview('refresh');
+            $('#listEcoles').listview({
+                autodividers: true,
+                filterPlaceholder: "Que cherchez-vous ? ",
+                autodividersSelector: function (li) {
+                    var out = li.attr('category');
                     return out;
                 }
             }).listview('refresh');

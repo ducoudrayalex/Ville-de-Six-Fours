@@ -1,4 +1,5 @@
 $('#signaler').on('pageshow', function () {
+    //Vide les champs de saisi et la div de l'image 
     document.getElementById('Image').src = "";
     document.getElementById('email').value = "";
     document.getElementById('info').value = "";
@@ -23,6 +24,7 @@ $('#signaler').on('pageshow', function () {
                 console.log('email:' + document.getElementById('email').value);
                 console.log('info:' + document.getElementById('info').value);
                 //appel ajax vers l'api mandrill : https://mandrillapp.com/
+                //
                 var laDate = new Date();
                 var annee = laDate.getFullYear();
                 var mois = laDate.getMonth() + 1;
@@ -30,6 +32,7 @@ $('#signaler').on('pageshow', function () {
                 var heure = laDate.getHours();
                 var minute = laDate.getMinutes();
                 var seconde = laDate.getSeconds();
+                //envoie un e-mail depuis l'adresse e-mail renseigné avec le message renseigné et la photo prise avec l'appareil photo en piece jointe
                 $.ajax({
                     'type': 'POST',
                     'url': 'https://mandrillapp.com/api/1.0/messages/send.json',

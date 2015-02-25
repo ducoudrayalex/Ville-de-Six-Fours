@@ -1,5 +1,5 @@
 $(document).on("pageinit", "[data-role='page']", function () {
-    var page = "#" + $(this).attr("id"),
+    var page = "#" + $(this).attr("id"),//récupère l'id de la page où $(this) correspond à la page courante
             // Get the filename of the next page that we stored in the data-next attribute
             next = $(this).jqmData("next"),
             // Get the filename of the previous page that we stored in the data-prev attribute
