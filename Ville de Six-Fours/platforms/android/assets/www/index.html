@@ -154,7 +154,7 @@
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>A voir</h1>
                 <div data-role="control-group" data-type="horizontal" class="ui-btn-right">
-                    <a href="#signaler" data-transition="flip" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-alert ui-btn-icon-notext">signaler</a>
+                    <a href="#signaler" data-transition="flip" class="ui-btn ui-shadow ui-corner-all ui-icon-alert ui-btn-icon-notext">signaler</a>
                     <a href="#accueil" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">home</a>
                 </div>
             </div>
@@ -168,7 +168,7 @@
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Actus</h1>
                 <div data-role="control-group" data-type="horizontal" class="ui-btn-right">
-                    <a href="#signaler" data-transition="flip" data-rel="dialog" class="ui-btn ui-shadow ui-corner-all ui-icon-alert ui-btn-icon-notext">signaler</a>
+                    <a href="#signaler" data-transition="flip" class="ui-btn ui-shadow ui-corner-all ui-icon-alert ui-btn-icon-notext">signaler</a>
                     <a href="#accueil" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">home</a>
                 </div>
             </div>
@@ -265,7 +265,7 @@
                 <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">back</a>
                 <h1>Infos Travaux</h1>
                 <div data-role="control-group" data-type="horizontal" class="ui-btn-right">
-                    <a href="#signaler" data-transition="pop" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-alert ui-btn-icon-notext">signaler</a>
+                    <a href="#signaler" data-transition="pop" class="ui-btn ui-shadow ui-corner-all ui-icon-alert ui-btn-icon-notext">signaler</a>
                     <a href="#accueil" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">home</a>
                 </div>
             </div>
@@ -292,11 +292,6 @@
                 <a href="#accueil" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">home</a>             
             </div>
             <div data-role="main" class="ui-content">
-                <form class="form-horizontal">
-                    <fieldset>
-
-                        <!-- Form Name -->
-                        <legend>Signaler un problème</legend>
                         <!-- Text input-->
                         <div class="control-group">
                             <label class="control-label" for="email">email :</label>
@@ -309,7 +304,7 @@
                         <div class="control-group">
                             <label class="control-label" for="info">Informations :</label>
                             <div class="controls">                     
-                                <textarea id="info" name="info">Information, date, adresse</textarea>
+                                <textarea id="info" name="info" placeholder="Information, date, adresse"></textarea>
                             </div>
                         </div>
                         <!-- Button -->
@@ -319,9 +314,15 @@
                                 <button id="btnCapture" name="btnCapture" class="btn btn-inverse">Prendre une photo</button>
                             </div>
                         </div>
-                        <img src="" id="Image" alt="image">
-                    </fieldset>
-                </form>
+                         <!-- Button -->
+                        <div class="control-group">
+                            <label class="control-label" for="btnEnvoi"></label>
+                            <div class="controls">
+                                <button id="btnEnvoi" name="btnEnvoi" class="btn btn-inverse">Envoyer un e-mail</button>
+                            </div>
+                        </div>
+                        <input type="text" id="urlImage" style="display:none;">
+                        <img src="" id="Image" style="display:none;width:100px;height:100px;" alt="image">
             </div>
             <div data-role="footer" data-position="fixed" data-theme="b">
                 <div data-role="navbar">

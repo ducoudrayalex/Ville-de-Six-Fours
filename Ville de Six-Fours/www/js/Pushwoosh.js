@@ -22,8 +22,6 @@ function initPushwoosh()
         function(status) {
             var pushToken = status;
             console.warn('push token: ' + pushToken);
-            console.log('push token:'+ pushToken);
-            alert(pushToken);
         },
         function(status) {
             console.warn(JSON.stringify(['failed to register ', status]));

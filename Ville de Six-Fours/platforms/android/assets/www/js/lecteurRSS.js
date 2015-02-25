@@ -7,7 +7,7 @@ function AjaxArticle() {
     var retourHtml = "";//chaine de caractere pour inserer du html dans la page
     $.ajax({//appel ajax en jquery
         type: "post",
-        url: "http://www.ville-six-fours.fr/feed/feedname",//url du flux rss
+        url: "http://www.ville-six-fours.fr/feed/feedname", //url du flux rss
         dataType: "xml",
         success: function (xml) {
             $(xml).find('item').each(function (id, valeur) {//navigation dans le fichier xml pour chaque item
@@ -15,7 +15,7 @@ function AjaxArticle() {
                     image: $(valeur).find('url').text(),
                     titre: $(valeur).find('title').text(),
                     //description: $(valeur).find('description').text(),
-                    desc:$(valeur).find('desc').text(),
+                    desc: $(valeur).find('desc').text(),
                     content: $(valeur).find('content').text()
                 };
                 stockFluxRSS.push(elementRSS);//on met chaque element dans le tableau pour le parcourir et recuperer les données que l'on veut
@@ -57,12 +57,15 @@ function AjaxArticle() {
                 //console.log(stockFluxRSS[id].description);
                 $("#contenuRSSActus").html('<div class="jumbotron"><h2 class="well">' + stockFluxRSS[id].titre + '</h2>\
 		<p><img src="' + stockFluxRSS[id].image + '" class="img-responsive" alt="image article"><br>' + stockFluxRSS[id].content + '</p></div>');
-            //remplissage de la page d'article
+                //remplissage de la page d'article
             });
         },
         error: function (xml, status, xhr) {
-            alert("Pour consulter les actus et l'agenda veuillez vous connecter à internet");
-            console.log(status);
+            if(status==="parsererror"){
+                navigator.notification.alert('Flux rss non conforme',alertDismiss,'information','ok');
+            }else{
+                navigator.notification.alert("Pour consulter les actus et l'agenda veuillez vous connecter à internet",alertDismiss,'information','ok');
+            }
         },
         complete: function () {
             //$(idlistview).listview('refresh');
@@ -89,8 +92,7 @@ function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencont
         url: fluxRSS,
         dataType: "xml",
         success: function (xml) {
-            if($(xml).find('item')){
-                $(xml).find('item').each(function (id, valeur) {
+            $(xml).find('item').each(function (id, valeur) {
                 var elementRSS = {
                     image: $(valeur).find('url').text(),
                     titre: $(valeur).find('title').text(),
@@ -100,9 +102,6 @@ function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencont
                 };
                 stockFluxRSS.push(elementRSS);
             });
-            }else{
-                $(idlistview).html('<li><h1>Il n\'y a pas d\'évenement prévus à ce jour</h1></li>');
-            }
             $.each(stockFluxRSS, function (id, valeur) {
                 retourHtml += '<li date="' + valeur.dtevent + '" >\
                 <a id ="' + id + '"  class="' + liencontenu + '">\
@@ -138,7 +137,13 @@ function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencont
 
         },
         error: function (xml, status, xhr) {
-            alert(status + " : Pour consulter les actus et l'agenda veuillez vous connecter à internet");
+            if(status==="parsererror"){
+                navigator.notification.alert('Flux rss non conforme',alertDismiss,'information','ok');
+            }else{
+                navigator.notification.alert("Pour consulter les actus et l'agenda veuillez vous connecter à internet",alertDismiss,'information','ok');
+            }
+            
+            
         },
         complete: function () {
             //$(idlistview).listview('refresh');
@@ -146,7 +151,9 @@ function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencont
         }
     });
 }
-
+function alertDismiss(){
+                
+            }
 /**
  * fonction d e génération de la liste des patrimoines
  * @param {type} fluxRSS
@@ -203,7 +210,11 @@ function AjaxListviewAvoir(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, lie
 
         },
         error: function (xml, status, xhr) {
-            alert(status + " : Pour consulter les actus et l'agenda veuillez vous connecter à internet");
+            if(status==="parsererror"){
+                navigator.notification.alert('Flux rss non conforme',alertDismiss,'information','ok');
+            }else{
+                navigator.notification.alert("Pour consulter les actus et l'agenda veuillez vous connecter à internet",alertDismiss,'information','ok');
+            }
         },
         complete: function () {
             //$(idlistview).listview('refresh');
@@ -216,8 +227,8 @@ $(document).ready(function () {//evennement d'appel des fonctions ci-dessus
     $('#Agenda').on('pagebeforeshow', function () {
         AjaxListview("http://centre-loisirs.ville-six-fours.fr/feed/feedeventsloisirs", "#listeFluxRSSAgenda", "#PageContenuFluxAgenda", "#contenuRSSAgenda", "liencontenuagenda");
     });
-    $('#Avoir').on('pagebeforeshow',function(){
-        AjaxListviewAvoir("http://www.ville-six-fours.fr/feed/feedpatrimoine",'#listeFluxRSSAvoir','#PageContenuFluxAvoir','#contenuRSSAvoir',"liencontenuavoir");
+    $('#Avoir').on('pagebeforeshow', function () {
+        AjaxListviewAvoir("http://www.ville-six-fours.fr/feed/feedpatrimoine", '#listeFluxRSSAvoir', '#PageContenuFluxAvoir', '#contenuRSSAvoir', "liencontenuavoir");
     });
 });
 
