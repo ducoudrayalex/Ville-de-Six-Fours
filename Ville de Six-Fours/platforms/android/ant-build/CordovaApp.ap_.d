@@ -179,8 +179,9 @@ C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\js\jquery.mobile-1.4.5.min.map \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\js\lecteurRSS.js \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\js\Pratique.js \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\js\Pushwoosh.js \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\js\Swipe.js \
-C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\de.appplant.cordova.plugin.email-composer \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\com.pushwoosh.plugins.pushwoosh \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.camera \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.device \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.dialogs \
@@ -188,8 +189,8 @@ C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.file-transfer \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.media-capture \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.network-information \
-C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\de.appplant.cordova.plugin.email-composer\www \
-C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\de.appplant.cordova.plugin.email-composer\www\email_composer.js \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\com.pushwoosh.plugins.pushwoosh\www \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\com.pushwoosh.plugins.pushwoosh\www\PushNotification.js \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.camera\www \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\Camera.js \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraConstants.js \

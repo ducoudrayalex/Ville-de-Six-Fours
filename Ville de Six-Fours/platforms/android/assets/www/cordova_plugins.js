@@ -274,11 +274,10 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/de.appplant.cordova.plugin.email-composer/www/email_composer.js",
-        "id": "de.appplant.cordova.plugin.email-composer.EmailComposer",
+        "file": "plugins/com.pushwoosh.plugins.pushwoosh/www/PushNotification.js",
+        "id": "com.pushwoosh.plugins.pushwoosh.PushNotification",
         "clobbers": [
-            "cordova.plugins.email",
-            "plugin.email"
+            "plugins.pushNotification"
         ]
     }
 ];
@@ -292,7 +291,7 @@ module.exports.metadata =
     "org.apache.cordova.media-capture": "0.3.7-dev",
     "org.apache.cordova.network-information": "0.2.16-dev",
     "org.apache.cordova.file-transfer": "0.5.1-dev",
-    "de.appplant.cordova.plugin.email-composer": "0.8.2dev"
+    "com.pushwoosh.plugins.pushwoosh": "3.4.11"
 }
 // BOTTOM OF METADATA
 });

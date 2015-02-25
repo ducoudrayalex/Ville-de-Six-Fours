@@ -1,11 +1,19 @@
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes.dex : \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\coolappz\Ville_de_Six_Fours\BuildConfig.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\coolappz\Ville_de_Six_Fours\CordovaApp.class \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\coolappz\Ville_de_Six_Fours\Manifest$permission.class \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\coolappz\Ville_de_Six_Fours\Manifest.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\coolappz\Ville_de_Six_Fours\R$attr.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\coolappz\Ville_de_Six_Fours\R$drawable.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\coolappz\Ville_de_Six_Fours\R$string.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\coolappz\Ville_de_Six_Fours\R$xml.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\coolappz\Ville_de_Six_Fours\R.class \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\pushwoosh\plugin\pushnotifications\PushNotifications$1.class \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\pushwoosh\plugin\pushnotifications\PushNotifications$1GetTagsListenerImpl.class \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\pushwoosh\plugin\pushnotifications\PushNotifications$1SendTagsListenerImpl.class \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\pushwoosh\plugin\pushnotifications\PushNotifications$2.class \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\pushwoosh\plugin\pushnotifications\PushNotifications$3.class \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\com\pushwoosh\plugin\pushnotifications\PushNotifications.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\de\appplant\cordova\emailcomposer\EmailComposer$1.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\de\appplant\cordova\emailcomposer\EmailComposer$2.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\de\appplant\cordova\emailcomposer\EmailComposer.class \
@@ -95,3 +103,4 @@ C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\org\apache\cordova\networkinformation\NetworkManager$1.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\classes\org\apache\cordova\networkinformation\NetworkManager.class \
 C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\dexedLibs\classes-4ef624de861dc47078db7aae336d05e1.jar \
+C:\Users\stage\Documents\Ville-de-Six-Fours\Ville de Six-Fours\platforms\android\ant-build\dexedLibs\Pushwoosh-2976b8d88ad5bb6bf2bfcc1a5c273dd3.jar \

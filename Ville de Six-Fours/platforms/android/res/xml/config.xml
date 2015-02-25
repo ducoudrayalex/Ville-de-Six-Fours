@@ -23,8 +23,8 @@
     <feature name="FileTransfer">
         <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
     </feature>
-    <feature name="EmailComposer">
-        <param name="android-package" value="de.appplant.cordova.emailcomposer.EmailComposer" />
+    <feature name="PushNotification">
+        <param name="android-package" onload="true" value="com.pushwoosh.plugin.pushnotifications.PushNotifications" />
     </feature>
     <name>Ville_de_Six_Fours</name>
     <description>
@@ -35,4 +35,5 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <access origin="*.pushwoosh.com" />
 </widget>
