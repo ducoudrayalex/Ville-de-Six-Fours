@@ -64,7 +64,7 @@ function AjaxArticle() {
             if(status==="parsererror"){
                 navigator.notification.alert('Flux rss non conforme',alertDismiss,'information','ok');
             }else{
-                navigator.notification.alert("Pour consulter les actus et l'agenda veuillez vous connecter à internet",alertDismiss,'information','ok');
+                navigator.notification.alert("Pour consulter les actus veuillez vous connecter à internet",alertDismiss,'information','ok');
             }
         },
         complete: function () {
@@ -118,7 +118,6 @@ function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencont
             $(idlistview).html(retourHtml);// insersion dans index.html 
             $(idlistview).listview({
                 autodividers: true,
-                filterPlaceholder: "Date, thème, mots clés...",
                 autodividersSelector: function (li) {
                     var out = li.attr('date');
                     return out;
@@ -140,7 +139,7 @@ function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencont
             if(status==="parsererror"){
                 navigator.notification.alert('Flux rss non conforme',alertDismiss,'information','ok');
             }else{
-                navigator.notification.alert("Pour consulter les actus et l'agenda veuillez vous connecter à internet",alertDismiss,'information','ok');
+                navigator.notification.alert("Pour consulter l'agenda veuillez vous connecter à internet",alertDismiss,'information','ok');
             }
             
             
@@ -213,7 +212,7 @@ function AjaxListviewAvoir(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, lie
             if(status==="parsererror"){
                 navigator.notification.alert('Flux rss non conforme',alertDismiss,'information','ok');
             }else{
-                navigator.notification.alert("Pour consulter les actus et l'agenda veuillez vous connecter à internet",alertDismiss,'information','ok');
+                navigator.notification.alert("Pour consulter le patrimoine de la ville veuillez vous connecter à internet",alertDismiss,'information','ok');
             }
         },
         complete: function () {
