@@ -248,3 +248,6 @@ ul.form {
 .tile-text{
     font-weight:bold;
 }
+.col-xs-12{
+    padding-left:8.5px;
+}

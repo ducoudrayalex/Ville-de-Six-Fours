@@ -53,7 +53,7 @@
         <!-- - - - - - - - -PAGE D'ACCUEIL- - - - - - - - -->
         <div data-role="page" id="accueil" data-dom-cache="true" class="accueil" data-prev="infotravaux" data-next="Agenda" data-theme="c" data-title="Accueil">           
             <div data-role="header" data-position="fixed" data-theme="b">
-                <h1>Ville de 6Fours-les-Plages</h1>
+                <h1>Ville de 6Fours</h1>
             </div>
             <div data-role="main" class="ui-content">
                 <!--bouton réseaux sociaux-->
@@ -63,8 +63,8 @@
                                     <li><a class="siteweb" href="http://www.ville-six-fours.fr/"><i class="fa fa-globe"></i></a></li>
                                 </ul>-->
 
-                <div class="container-fluid">
-                    <div class="col-xs-6">
+                
+                    <div class="col-xs-12">
                         <div class="thumbnail tile tile-wide tile-wet-asphalt" id="tileActus">
                             <a href="#Actus">
                                 <h2 class="tile-text">Actus</h2>
@@ -88,26 +88,32 @@
                     <div class="col-xs-6">
                         <a href="#Pratique">
                             <div class="thumbnail tile tile-medium tile-wet-asphalt" id="tilePratique">
-                                <h2 class="tile-text">Pratique</h2>
+                                <h1 class="tile-text">Pratique</h1>
                             </div>
                         </a>
                     </div>
                     <div class="col-xs-6">
                         <div class="thumbnail tile tile-medium tile-wet-asphalt" id="tileInfoTravaux">
                             <a href="#infostravaux">
-                                <h2 class="tile-text">Infos travaux</h2>
+                                <h1 class="tile-text">Infos travaux</h1>
                             </a>
                         </div>
                     </div>
                     <div class="col-xs-6">
                         <div class="thumbnail tile tile-medium tile-wet-asphalt" id="tileSignaler">
                             <a href="#signaler">
-                                <h2 class="tile-text">Signaler</h2>
+                                <h1 class="tile-text">Signaler</h1>
                             </a>
                         </div>
                     </div>
-                    
-                        </div>
+                    <div class="col-xs-6">
+                        <div class="thumbnail tile tile-medium">
+                            <a href="https://fr-fr.facebook.com/VilleDeSixFoursLesPlages" class="fa-links">
+                                <h1 class="tile-text">Facebook</h1>
+                                <i class="fa fa-4x fa-facebook-square"></i>
+                            </a>
+                        </div>
+                    </div>                  
                     </div><!-- /content -->
             <!--            <div data-role="footer" data-theme="b">
                             <div class="container-fluid" >
@@ -349,7 +355,7 @@
                 <div class="control-group">
                     <label class="control-label" for="email">email :</label>
                     <div class="controls">
-                        <input id="email" name="email" type="email" placeholder="Votre email" class="input-xlarge" required="">
+                        <input id="email" name="email" type="text" placeholder="Votre email" class="input-xlarge" required pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
                         <p class="help-block">Entrez votre adresse mail</p>
                     </div>
                 </div>
@@ -364,14 +370,14 @@
                 <div class="control-group">
                     <label class="control-label" for="btnCapture"></label>
                     <div class="controls">
-                        <button id="btnCapture" name="btnCapture" class="btn btn-inverse">Prendre une photo</button>
+                        <button id="btnCapture" name="btnCapture" class="ui-btn ui-icon-camera ui-btn-icon-right">Prendre une photo</button>
                     </div>
                 </div>
                 <!-- Button -->
                 <div class="control-group">
                     <label class="control-label" for="btnEnvoi"></label>
                     <div class="controls">
-                        <button id="btnEnvoi" name="btnEnvoi" class="btn btn-inverse">Envoyer un e-mail</button>
+                        <button id="btnEnvoi" name="btnEnvoi" class="ui-btn ui-icon-mail ui-btn-icon-right">Envoyer un e-mail</button>
                     </div>
                 </div>
                 <input type="text" id="urlImage" style="display:none;">
@@ -394,6 +400,7 @@
         <script type="text/javascript" src="js/lecteurRSS.js"></script>
         <script type="text/javascript" src="js/Swipe.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
+        <!--valeur de l'argument key a changer car sur mon compte google. Pour cela aller sur la google developper console et créer une nouvelle browser api key
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyDSlL_s0uDPis7IK5HgUsJDSZvGlF-w6ZU"></script>
         <script type="text/javascript" src="js/Pushwoosh.js"></script>
         <!--        <script type="text/javascript" src="js/index.js"></script>-->

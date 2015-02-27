@@ -27,6 +27,9 @@ document.addEventListener("deviceready", function () {
         });
 
         $('#btnEnvoi').click(function () {
+            if(document.getElementById('email').value===""){
+                
+            }
             navigator.notification.confirm(
                     'Envoyer l\'e-mail ?',
                     onConfirm,
