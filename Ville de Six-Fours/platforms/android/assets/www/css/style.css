@@ -83,6 +83,7 @@ h4{
     width:20%;
     height:20%;
 }
+
 .ui-icon-calendrier:after {
     background-image: url("../img/calendrier-mini.jpg");
 }
@@ -214,11 +215,36 @@ ul.form {
  width: 100%;
 }
 
-#smallImage{
-    display:none;
-    width:60px;
-    height:60px;
+#tileActus{
+    background-image: url('../img/espacemalraux-1110x400.png');
+    background-size: cover;
+    opacity:1;
 }
-#largeImage{
-    display:none;
+#tileAgenda{
+    background-image: url('../img/sixnetoiles-150x150.png');
+    background-size: cover;
+   opacity:1;
+}
+#tileAvoir{
+    background-image: url('../img/laville-1110x400.png');
+    background-size: cover;
+    opacity:1;
+}
+#tileInfoTravaux{
+    background-image: url('../img/travaux1-1110x400.jpg');
+    background-size: cover;
+    opacity:1;
+}
+#tilePratique{
+    background-image: url('../img/bus-1110x400.jpg');
+    background-size: cover;
+    opacity:1;
+}
+#tileSignaler{
+    background-image: url('../img/brigade-de-nuit-1110x400.jpg');
+    background-size: cover;
+    opacity:1;
+}
+.tile-text{
+    font-weight:bold;
 }

@@ -34,10 +34,11 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.inline-png-1.4.5.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-        <script type="text/javascript" src="js/jquery.ui.map.full.min.js"></script>
+        <!--        <script type="text/javascript" src="js/jquery.ui.map.full.min.js"></script>-->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <title>Ville de Six-Fours</title>
     </head>
@@ -50,38 +51,92 @@
                     </div>
                 </div>-->
         <!-- - - - - - - - -PAGE D'ACCUEIL- - - - - - - - -->
-        <div data-role="page" id="accueil" class="page" data-dom-cache="true" data-prev="infotravaux" data-next="Agenda" data-theme="c" data-title="Accueil">           
-            <!--bouton réseaux sociaux-->
-            <ul class="form">
-                <li><a class="facebook" href="https://fr-fr.facebook.com/VilleDeSixFoursLesPlages"><i class="fa fa-facebook-square"></i></a></li>         
-                <li><a class="siteweb" href="http://www.ville-six-fours.fr/"><i class="fa fa-globe"></i></a></li>
-            </ul>
-            <div data-role="footer" data-theme="b">
-                <div class="container-fluid" >
-                    <div class="col-xs-12">
-                        <div class="col-xs-4">
-                            <a href="#Agenda"  class="ui-btn menu ui-icon-calendrier ui-btn-icon-left" data-transition="slide">Agenda</a>
-                        </div>
-                        <div class="col-xs-4">
-                            <a href="#Avoir" class="ui-btn menu ui-icon-avoir ui-btn-icon-left" data-transition="slide">A voir</a>
-                        </div>
-                        <div class="col-xs-4">
-                            <a href="#Actus" class="ui-btn menu ui-icon-actus ui-btn-icon-left" data-transition="slide">Actus</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="col-xs-4">
-                            <a href="#Pratique" class="ui-btn menu ui-icon-pratique ui-btn-icon-left" data-transition="slide">Pratique</a>
-                        </div>
-                        <div class="col-xs-4">
-                            <a href="#infostravaux" class="ui-btn menu ui-icon-info ui-btn-icon-left" data-transition="slide">Infotravo</a>
-                        </div>
-                        <div class="col-xs-4"> 
-                            <a href="#signaler" class="ui-btn menu ui-icon-signaler ui-btn-icon-left" data-transition="flip">Signaler</a>
-                        </div>
-                    </div>
-                </div>
+        <div data-role="page" id="accueil" data-dom-cache="true" class="accueil" data-prev="infotravaux" data-next="Agenda" data-theme="c" data-title="Accueil">           
+            <div data-role="header" data-position="fixed" data-theme="b">
+                <h1>Ville de 6Fours-les-Plages</h1>
             </div>
+            <div data-role="main" class="ui-content">
+                <!--bouton réseaux sociaux-->
+
+                <!--                <ul class="form">
+                                    <li><a class="facebook" href="https://fr-fr.facebook.com/VilleDeSixFoursLesPlages"><i class="fa fa-facebook-square"></i></a></li>         
+                                    <li><a class="siteweb" href="http://www.ville-six-fours.fr/"><i class="fa fa-globe"></i></a></li>
+                                </ul>-->
+
+                <div class="container-fluid">
+                    <div class="col-xs-12">
+                        <div class="thumbnail tile tile-wide tile-wet-asphalt" id="tileActus">
+                            <a href="#Actus">
+                                <h2 class="tile-text">Actus</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6" >
+                        <div class="thumbnail tile tile-medium tile-wet-asphalt" id="tileAgenda">
+                            <a href="#Agenda">
+                                <h1 class="tile-text">Agenda</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="thumbnail tile tile-medium tile-wet-asphalt" id="tileAvoir">
+                            <a href="#Avoir">
+                                <h1 class="tile-text">A voir</h1>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-6">
+                        <a href="#Pratique">
+                            <div class="thumbnail tile tile-medium tile-wet-asphalt" id="tilePratique">
+
+                                <h2 class="tile-text">Pratique</h2>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="thumbnail tile tile-medium tile-wet-asphalt" id="tileInfoTravaux">
+                            <a href="#infostravaux">
+                                <h2 class="tile-text">Infos travaux</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="thumbnail tile tile-medium tile-wet-asphalt" id="tileSignaler">
+                            <a href="#signaler">
+                                <h2 class="tile-text">Signaler</h2>
+                            </a>
+                        </div>
+                    </div>
+                        </div>
+                    </div><!-- /content -->
+            <!--            <div data-role="footer" data-theme="b">
+                            <div class="container-fluid" >
+                                <div class="col-xs-12">
+                                    <div class="col-xs-4">
+                                        <a href="#Agenda"  class="ui-btn menu ui-icon-calendrier ui-btn-icon-left" data-transition="slide">Agenda</a>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a href="#Avoir" class="ui-btn menu ui-icon-avoir ui-btn-icon-left" data-transition="slide">A voir</a>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a href="#Actus" class="ui-btn menu ui-icon-actus ui-btn-icon-left" data-transition="slide">Actus</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="col-xs-4">
+                                        <a href="#Pratique" class="ui-btn menu ui-icon-pratique ui-btn-icon-left" data-transition="slide">Pratique</a>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a href="#infostravaux" class="ui-btn menu ui-icon-info ui-btn-icon-left" data-transition="slide">Infotravo</a>
+                                    </div>
+                                    <div class="col-xs-4"> 
+                                        <a href="#signaler" class="ui-btn menu ui-icon-signaler ui-btn-icon-left" data-transition="flip">Signaler</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
         </div>
         <!-- - - - - - - - -FIN PAGE D'ACCUEIL- - - - - - - - - -->
         <!-- - - - - - - - - -PAGE AGENDA- - - - - - - - -->
@@ -292,37 +347,37 @@
                 <a href="#accueil" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">home</a>             
             </div>
             <div data-role="main" class="ui-content">
-                        <!-- Text input-->
-                        <div class="control-group">
-                            <label class="control-label" for="email">email :</label>
-                            <div class="controls">
-                                <input id="email" name="email" type="email" placeholder="Votre email" class="input-xlarge" required="">
-                                <p class="help-block">Entrez votre adresse mail</p>
-                            </div>
-                        </div>
-                        <!-- Textarea -->
-                        <div class="control-group">
-                            <label class="control-label" for="info">Informations :</label>
-                            <div class="controls">                     
-                                <textarea id="info" name="info" placeholder="Information, date, adresse"></textarea>
-                            </div>
-                        </div>
-                        <!-- Button -->
-                        <div class="control-group">
-                            <label class="control-label" for="btnCapture"></label>
-                            <div class="controls">
-                                <button id="btnCapture" name="btnCapture" class="btn btn-inverse">Prendre une photo</button>
-                            </div>
-                        </div>
-                         <!-- Button -->
-                        <div class="control-group">
-                            <label class="control-label" for="btnEnvoi"></label>
-                            <div class="controls">
-                                <button id="btnEnvoi" name="btnEnvoi" class="btn btn-inverse">Envoyer un e-mail</button>
-                            </div>
-                        </div>
-                        <input type="text" id="urlImage" style="display:none;">
-                        <img src="" id="Image" style="display:none;width:100px;height:100px;" alt="image">
+                <!-- Text input-->
+                <div class="control-group">
+                    <label class="control-label" for="email">email :</label>
+                    <div class="controls">
+                        <input id="email" name="email" type="email" placeholder="Votre email" class="input-xlarge" required="">
+                        <p class="help-block">Entrez votre adresse mail</p>
+                    </div>
+                </div>
+                <!-- Textarea -->
+                <div class="control-group">
+                    <label class="control-label" for="info">Informations :</label>
+                    <div class="controls">                     
+                        <textarea id="info" name="info" placeholder="Information, date, adresse"></textarea>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div class="control-group">
+                    <label class="control-label" for="btnCapture"></label>
+                    <div class="controls">
+                        <button id="btnCapture" name="btnCapture" class="btn btn-inverse">Prendre une photo</button>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div class="control-group">
+                    <label class="control-label" for="btnEnvoi"></label>
+                    <div class="controls">
+                        <button id="btnEnvoi" name="btnEnvoi" class="btn btn-inverse">Envoyer un e-mail</button>
+                    </div>
+                </div>
+                <input type="text" id="urlImage" style="display:none;">
+                <img src="" id="Image" style="display:none;width:150px;height:150px;" alt="image">
             </div>
             <div data-role="footer" data-position="fixed" data-theme="b">
                 <div data-role="navbar">
