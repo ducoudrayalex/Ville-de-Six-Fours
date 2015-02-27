@@ -29,7 +29,7 @@
   >
 
 <!--- Put your DTDDoc comment here. -->
-<!ELEMENT service (nom|tel|lat|long|adresse|contenu|site)*>
+<!ELEMENT service (nom|tel|lat|long|adresse|content|contenu|site|mail)*>
 
 <!--- Put your DTDDoc comment here. -->
 <!ELEMENT nom (#PCDATA)>
@@ -47,7 +47,13 @@
 <!ELEMENT adresse (#PCDATA)>
 
 <!--- Put your DTDDoc comment here. -->
+<!ELEMENT content (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
 <!ELEMENT contenu (#PCDATA)>
 
 <!--- Put your DTDDoc comment here. -->
 <!ELEMENT site (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT mail (#PCDATA)>

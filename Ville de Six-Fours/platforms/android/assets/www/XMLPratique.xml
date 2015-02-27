@@ -215,33 +215,33 @@
             <lat>43.105432</lat>
             <long>5.813248</long>
             <contenu>Zone de longue durée limitée à 9h consécutives, avec 2 heures gratuites, du 1er mai au 31 septembre de chaque année.
-Jours et horaires : tous les jours de la semaine, samedi, dimanche et jours fériés compris de 9h à 18h
-Tarifs : 2 heures gratuites avec ticket obligatoire – somme minimale 1€ de perception pour 2h30 – somme maximale : 4,50€ pour 9h</contenu>
+                Jours et horaires : tous les jours de la semaine, samedi, dimanche et jours fériés compris de 9h à 18h
+                Tarifs : 2 heures gratuites avec ticket obligatoire – somme minimale 1€ de perception pour 2h30 – somme maximale : 4,50€ pour 9h</contenu>
         </service>
         <service>
             <nom>Parc de la méditerrannée</nom>
             <lat>43.09968247</lat>
             <long>5.81134647</long>
             <contenu>Zone de courte durée limitée à 3h consécutives du 1er mai au 30 septembre de chaque année.
-Jours et horaires : tous les jours de la semaine, samedis, dimanches et jours fériés compris de 9h à 18h
-Tarifs : 0,50€ pour 30 minutes – somme maximale : 2€ pour 3h</contenu>
+                Jours et horaires : tous les jours de la semaine, samedis, dimanches et jours fériés compris de 9h à 18h
+                Tarifs : 0,50€ pour 30 minutes – somme maximale : 2€ pour 3h</contenu>
         </service>
         <service>
             <nom>Parking des baigneurs</nom>
             <lat>43.09214586</lat>
             <long>5.81119895</long>
             <contenu>Zone de courte durée limitée à 3h consécutives du 1er mai au 30 septembre de chaque année.
-Jours et horaires : tous les jours de la semaine, samedis, dimanches et jours fériés compris de 9h à 18h
-Tarifs : 0,50€ pour 30 minutes – somme maximale : 2€ pour 3h</contenu>
+                Jours et horaires : tous les jours de la semaine, samedis, dimanches et jours fériés compris de 9h à 18h
+                Tarifs : 0,50€ pour 30 minutes – somme maximale : 2€ pour 3h</contenu>
         </service>
         <service>
             <nom>Port de la coudoulière</nom>
             <lat>43.09706592</lat>
             <long>5.81216455</long>
             <contenu>Zone de longue durée limitée à 9h consécutives, du 1er mai au 30 septembre de chaque année.
-Jours et horaires : du lundi au dimanche inclus, y compris les jours fériés, de 9h à 18h
-Tarifs : somme minimale : 0,20€ pour 12 min – somme maximale : 9€ pour 9h
-Possibilité de carte d’abonnement pour les usagers du domaine portuaire : 15 jours (10€) ou 1 mois (20€). La carte est attribuée à un véhicule (immatriculation) et devra être apposée derrière le pare-brise. Sa validité est également mentionnée.</contenu>
+                Jours et horaires : du lundi au dimanche inclus, y compris les jours fériés, de 9h à 18h
+                Tarifs : somme minimale : 0,20€ pour 12 min – somme maximale : 9€ pour 9h
+                Possibilité de carte d’abonnement pour les usagers du domaine portuaire : 15 jours (10€) ou 1 mois (20€). La carte est attribuée à un véhicule (immatriculation) et devra être apposée derrière le pare-brise. Sa validité est également mentionnée.</contenu>
         </service>
     </item>
     <item category="Ecoles">
@@ -269,7 +269,7 @@ Possibilité de carte d’abonnement pour les usagers du domaine portuaire : 15 
         <service>
             <nom>Ecole maternelle Frédéric Mistral</nom>
             <adresse>Rue de la Cauquière
-83140 Six-Fours les Plages</adresse>
+                83140 Six-Fours les Plages</adresse>
             <lat>43.0954012</lat>
             <long>5.8405127</long>
             <tel>04 94 34 39 27</tel>
@@ -277,7 +277,7 @@ Possibilité de carte d’abonnement pour les usagers du domaine portuaire : 15 
         <service>
             <nom>Ecole maternelle La Meynade</nom>
             <adresse>Rue des Goélands
-83140 Six-Fours les Plages</adresse>
+                83140 Six-Fours les Plages</adresse>
             <lat>43.0999558</lat>
             <long>5.8302553</long>
             <tel>04 94 25 48 59 </tel>
@@ -285,7 +285,7 @@ Possibilité de carte d’abonnement pour les usagers du domaine portuaire : 15 
         <service>
             <nom>Ecole maternelle des playes</nom>
             <adresse>Rue de la Maternelle des Playes
-83140 Six-Fours les Plages</adresse>
+                83140 Six-Fours les Plages</adresse>
             <lat>43.1104393</lat>
             <long>5.8272289</long>
             <tel>04 94 25 61 17</tel>
@@ -300,7 +300,7 @@ Possibilité de carte d’abonnement pour les usagers du domaine portuaire : 15 
         <service>
             <nom>Ecole primaire Reynier</nom>
             <adresse>91 Impasse des Lilas, La Mascotte
-83140 Six-Fours les Plages</adresse>
+                83140 Six-Fours les Plages</adresse>
             <lat>43.089311</lat>
             <long>5.843389</long>
             <tel>04 94 34 35 55</tel>
