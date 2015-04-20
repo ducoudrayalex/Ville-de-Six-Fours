@@ -1,4 +1,8 @@
 //$('#signaler').on('pageinit', function () {
+/*
+ * Permet de lancer la capture de photo en lancant l'application du téléphone 
+ * puis d'envoyer un mail avec le contenu du formulaire
+ */
 document.addEventListener("deviceready", function () {
     $('#signaler').on('pageinit', function () {
         $("#btnCapture").click(function () {
@@ -38,7 +42,7 @@ document.addEventListener("deviceready", function () {
                     );
             //appel ajax vers l'api mandrill : https://mandrillapp.com/
             /**
-             * 
+             * fonction d'envoie de mail 
              * @param {type} buttonIndex
              * @returns {undefined}
              */

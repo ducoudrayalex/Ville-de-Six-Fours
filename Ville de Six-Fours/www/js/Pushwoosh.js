@@ -1,3 +1,7 @@
+/**
+ * Initialise le service pushwoosh pour permettre l'utilisation de notifications Push
+ * @returns {undefined}
+ */
 function initPushwoosh()
 {
     var pushNotification = window.plugins.pushNotification;

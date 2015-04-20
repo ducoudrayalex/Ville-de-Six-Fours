@@ -1,6 +1,7 @@
 /**
- * 
- * @returns {undefined}
+ * Fonction qui va chercher dans le ficher XMLPratique les informations
+ *  à afficher dans la liste de la page InfoPratique
+ * @returns {html}
  */
 function listePratique() {
     $.ajax({

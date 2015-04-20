@@ -1,20 +1,23 @@
+/*
+ * Ce fichier a pour but de permettre de naviguer parmi les pages
+ *  de l'application en glissant avec le doight sur l'écran à gauche ou à droite 
+ */
 $(document).on("pageinit", "[data-role='page']", function () {
-    var page = "#" + $(this).attr("id"),//récupère l'id de la page où $(this) correspond à la page courante
-            // Get the filename of the next page that we stored in the data-next attribute
+    var page = "#" + $(this).attr("id"), //récupère l'id de la page où $(this) correspond à la page courante
+            // récupére l'id de la page suivante qui est stocké dans l'attribut data-next
             next = $(this).jqmData("next"),
-            // Get the filename of the previous page that we stored in the data-prev attribute
+            // récupére l'id de la page précédente qui est stocké dans l'attribut data-prev
             prev = $(this).jqmData("prev");
-// Check if we did set the data-next attribute
+// vérifie si l'attribut data-next est rempli
     if (next) {
-        // Prefetch the next page
+        // précharge la page suivante
         $.mobile.loadPage('#' + next);
-        // Navigate to next page on swipe left
+        // évenement pour swipe vers la droite et changer de page
         $(document).on("swipeleft", page, function () {
             $.mobile.changePage('#' + next, {transition: "slide"});
         });
     }
-
-// The same for the previous page (we set data-dom-cache="true" so there is no need to prefetch)
+// pareil que précedemment sauf qu'il n'y a plus besoin de précharger la page
     if (prev) {
         $(document).on("swiperight", page, function () {
             $.mobile.changePage('#' + prev, {transition: "slide", reverse: true});

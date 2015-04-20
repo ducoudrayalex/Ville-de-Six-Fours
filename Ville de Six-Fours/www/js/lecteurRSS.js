@@ -1,6 +1,6 @@
 /**
  * fonction qui génére le flux d'actualité
- * @returns {undefined}
+ * @returns {html}
  */
 function AjaxArticle() {
     var stockFluxRSS = [];//tableau pour mettre les elements du flux rss
@@ -81,7 +81,7 @@ function AjaxArticle() {
  * @param {type} idcontenuflux
  * @param {type} idcontenuRSS
  * @param {type} liencontenu
- * @returns {undefined}
+ * @returns {html}
  */
 function AjaxListview(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencontenu) {
     console.log(fluxRSS);
@@ -154,13 +154,13 @@ function alertDismiss(){
                 
             }
 /**
- * fonction d e génération de la liste des patrimoines
+ * fonction de génération de la liste des patrimoines
  * @param {type} fluxRSS
  * @param {type} idlistview
  * @param {type} idcontenuflux
  * @param {type} idcontenuRSS
  * @param {type} liencontenu
- * @returns {undefined}
+ * @returns {html}
  */
 function AjaxListviewAvoir(fluxRSS, idlistview, idcontenuflux, idcontenuRSS, liencontenu) {
     console.log(fluxRSS);
